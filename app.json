@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Kazutettoh/PaperplaneExtended",
+  "repository": "https://github.com/AvinashReddy3108/PaperplaneExtended",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-07-24",
   "success_url": "https://t.me/PaperplaneExtended",
   "stack": "container",
@@ -25,6 +25,18 @@
     "STRING_SESSION": {
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
       "required": true
+    },
+    "UPSTREAM_REPO_URL": {
+      "description": "In case you maintain a fork, add your repo URL here.",
+      "required": false
+    },
+    "HEROKU_APIKEY": {
+      "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
+      "value": ""
+    },
+    "HEROKU_APPNAME": {
+      "description": "Add the Heroku app name here. It helps with userbot updates.",
+      "value": ""
     },
     "COUNTRY": {
       "description": "Set your Country to be used in the .time and .date commands.",
@@ -119,7 +131,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "[PM = Report Spam] I ❤ ️@PaperplaneExtended",
+      "value": "[PM = Report Spam] Beware of my userbot.",
       "required": false
     },
     "ALIVE_NAME": {
@@ -152,3 +164,15 @@
     }
   ]
 }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
