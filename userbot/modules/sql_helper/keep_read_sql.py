@@ -1,9 +1,9 @@
 try:
     from userbot.modules.sql_helper import SESSION, BASE
 except ImportError:
-    raise AttributeError
+    raise Exception("Hello!")
 
-from sqlalchemy import Column, String
+from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
 
 class KRead(BASE):
@@ -20,7 +20,7 @@ KRead.__table__.create(checkfirst=True)
 def is_kread():
     try:
         return SESSION.query(KRead).all()
-    except BaseException:
+    except:
         return None
     finally:
         SESSION.close()

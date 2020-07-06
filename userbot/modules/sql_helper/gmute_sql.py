@@ -1,7 +1,7 @@
 try:
     from userbot.modules.sql_helper import SESSION, BASE
 except ImportError:
-    raise AttributeError
+    raise Exception("Hello!")
 
 from sqlalchemy import Column, String, UnicodeText
 
@@ -20,7 +20,7 @@ GMute.__table__.create(checkfirst=True)
 def is_gmuted(sender_id):
     try:
         return SESSION.query(GMute).all()
-    except BaseException:
+    except:
         return None
     finally:
         SESSION.close()
